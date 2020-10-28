@@ -1,0 +1,171 @@
+/* Checkboxes */
+html.dark .checkbox-primary label:before,
+.checkbox-primary label:before {
+	background: #FED213;
+	border-color: #0077b3;
+}
+
+html.dark .checkbox-text-primary input[type="checkbox"]:checked + label:after,
+.checkbox-text-primary input[type="checkbox"]:checked + label:after {
+	color: #FED213;
+}
+/* Radios */
+html.dark .radio-primary input[type="radio"]:checked + label:after,
+.radio-primary input[type="radio"]:checked + label:after {
+	background: #FED213;
+	-webkit-box-shadow: 0px 0px 1px #FED213;
+	box-shadow: 0px 0px 1px #FED213;
+}
+/* Switch */
+.switch.switch-primary .ios-switch .on-background {
+	background: #FED213;
+}
+/* Progress Bar */
+.progress-bar {
+	background-color: #FED213;
+}
+
+.progress .progress-bar-primary {
+	background-color: #FED213;
+}
+/* Slider */
+.slider-primary .ui-slider-range,
+.slider-primary .ui-slider-handle {
+	background: #FED213;
+}
+
+.slider-gradient.slider-primary .ui-slider-range,
+.slider-gradient.slider-primary .ui-slider-handle {
+	background-image: -webkit-linear-gradient(left, #00aaff 0, #FED213 50%, #FED213 100%);
+	background-image: linear-gradient(left, #00aaff 0, #FED213 50%, #FED213 100%);
+}
+
+.slider-gradient.ui-slider-vertical.slider-primary .ui-slider-range,
+.slider-gradient.ui-slider-vertical.slider-primary .ui-slider-handle {
+	background-image: -webkit-linear-gradient(to right, #00aaff 0, #FED213 50%, #FED213 100%);
+	background-image: linear-gradient(to right, #00aaff 0, #FED213 50%, #FED213 100%);
+}
+/* DatePicker */
+.datepicker table {
+	width: 100%;
+}
+
+.datepicker table thead tr th.prev:hover,
+.datepicker table thead tr th.next:hover {
+	background: #FED213;
+}
+
+.datepicker table thead tr:first-child th:hover {
+	background: #FED213;
+}
+
+.datepicker table tr td span:hover {
+	background: #FED213;
+}
+
+.datepicker table tr td.day:hover {
+	background: #FED213;
+}
+
+.datepicker table tfoot tr th:hover {
+	background: #FED213;
+}
+/* DatePicker: Dark */
+html.dark .datepicker.datepicker-primary table thead tr th.prev:hover,
+.datepicker.datepicker-dark table thead tr th.prev:hover,
+html.dark .datepicker.datepicker-primary table thead tr th.next:hover,
+.datepicker.datepicker-dark table thead tr th.next:hover {
+	background: #FED213;
+}
+
+html.dark .datepicker.datepicker-primary table tbody tr td.day:hover,
+.datepicker.datepicker-dark table tbody tr td.day:hover {
+	background: #FED213;
+}
+
+html.dark .datepicker.datepicker-primary table tbody tr td.day.active,
+.datepicker.datepicker-dark table tbody tr td.day.active {
+	background: #FED213;
+}
+/* DatePicker: Primary */
+.datepicker.datepicker-primary table thead tr:first-child {
+	background-color: #FED213;
+}
+
+.datepicker.datepicker-primary table thead tr:first-child th:hover {
+	background-color: #FED213;
+}
+
+.datepicker.datepicker-primary table thead tr:last-child {
+	background-color: #FED213;
+}
+
+.datepicker.datepicker-primary table thead tr:last-child th:hover {
+	background-color: #FED213;
+}
+
+.datepicker.datepicker-primary table tbody tr td.day:hover {
+	background: #FED213;
+}
+
+.datepicker.datepicker-primary table tbody tr td.day.active {
+	background: #FED213;
+}
+/* Select 2 */
+.select2-container-multi .select2-choices .select2-search-choice {
+	background: #FED213;
+}
+/* Wizard */
+.wizard-steps > li.active .badge {
+	background-color: #FED213;
+}
+
+.wizard-steps > li.active a,
+.wizard-steps > li.active a:hover,
+.wizard-steps > li.active a:focus {
+	border-top-color: #FED213;
+}
+
+.wizard-tabs ul > li.active .badge {
+	background-color: #FED213;
+}
+
+html .wizard-progress .steps-progress .progress-indicator,
+html.dark .wizard-progress .steps-progress .progress-indicator {
+	background: #FED213;
+}
+
+html .wizard-progress .wizard-steps li.completed a span,
+html.dark .wizard-progress .wizard-steps li.completed a span {
+	border-color: #FED213;
+	background: #FED213;
+}
+
+html .wizard-progress .wizard-steps li.active a span,
+html.dark .wizard-progress .wizard-steps li.active a span {
+	color: #FED213;
+	border-color: #FED213;
+}
+/* Tables */
+.table > thead > tr > td.primary,
+.table > tbody > tr > td.primary,
+.table > tfoot > tr > td.primary,
+.table > thead > tr > th.primary,
+.table > tbody > tr > th.primary,
+.table > tfoot > tr > th.primary,
+.table > thead > tr.primary > td,
+.table > tbody > tr.primary > td,
+.table > tfoot > tr.primary > td,
+.table > thead > tr.primary > th,
+.table > tbody > tr.primary > th,
+.table > tfoot > tr.primary > th {
+	background-color: #FED213 !important;
+}
+/* Data Tables Loading */
+.dataTables_processing {
+	background-color: #FED213;
+}
+/* Liquid Meter */
+.liquid-meter-wrapper .liquid-meter-selector a.active {
+	color: #FED213;
+}
