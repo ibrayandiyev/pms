@@ -100,7 +100,6 @@ class Employee extends Admin_Controller
             $this->employee_validation();
             if ($this->form_validation->run() == true) {
                 //save all employee information in the database
-                
                 if (isset($_FILES["attachment_file"]) && !empty($_FILES['attachment_file']['name'])) {
                     $config['upload_path'] = './uploads/attachments/documents/';
                     $config['allowed_types'] = 'gif|jpg|png|pdf';

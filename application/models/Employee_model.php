@@ -47,7 +47,7 @@ class Employee_model extends MY_Model
     // GET SINGLE EMPLOYEE DETAILS
     public function getSingleStaff($id = '')
     {
-        $this->db->select('staff.*, staff_documents.*, staff_types.id as staff_type_id, staff_types.name as staff_type, salary_types.name as salary_type, salary_types.id as salary_type_id');
+        $this->db->select('staff.*, staff_documents.*, staff.id as staff_id, staff_types.id as staff_type_id, staff_types.name as staff_type, salary_types.name as salary_type, salary_types.id as salary_type_id');
         $this->db->from('staff');
         $this->db->join('staff_types', 'staff_types.id = staff.staff_type_id', 'left');
         $this->db->join('staff_documents', 'staff_documents.staff_id = staff.id', 'left');

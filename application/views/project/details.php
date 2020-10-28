@@ -153,9 +153,9 @@
             <div class="panel-body">
                 <input type="hidden" name="project_id" value="<?=$projectInfo['id']?>">
                 <div class="form-group mt-md">
-                    <label class="col-md-3 control-label">Project ID </label>
+                    <label class="col-md-3 control-label">Project No</label>
                     <div class="col-md-9">
-                        <input type="text" class="form-control" name="" value="<?=$projectInfo['project_id']?>" disabled="disabled" />
+                        <input type="text" class="form-control" name="" value="<?=$projectInfo['project_no']?>" disabled="disabled" />
                         <span class="error"></span>
                     </div>
                 </div>
@@ -208,9 +208,9 @@
             <div class="panel-body">
                 <input type="hidden" name="e_staffs_projects_id" id="e_staffs_projects_id" value="">
                 <div class="form-group mt-md">
-                    <label class="col-md-3 control-label">Project ID </label>
+                    <label class="col-md-3 control-label">Project No </label>
                     <div class="col-md-9">
-                        <input type="text" class="form-control" name="" value="<?=$projectInfo['project_id']?>" disabled="disabled" />
+                        <input type="text" class="form-control" name="" value="<?=$projectInfo['project_no']?>" disabled="disabled" />
                         <span class="error"></span>
                     </div>
                 </div>

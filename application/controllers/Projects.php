@@ -267,7 +267,7 @@ class Projects extends Admin_Controller
     // Validation for Employee
     protected function employee_validation()
     {
-        $this->form_validation->set_rules('employee_id', 'Employee Name', 'trim|required');
+        $this->form_validation->set_rules('employee_id', 'Employee Name', 'trim|required|callback_unique_employee_in_single_project');
         $this->form_validation->set_rules('remarks', 'Remarks', 'trim');
     }
     // Add Employees
@@ -336,6 +336,25 @@ class Projects extends Admin_Controller
             echo json_encode(array('status' => 'fail', 'error' => $error));
         }
         
+    }
+    // unique valid employee verification for single project is done here
+    public function unique_employee_in_single_project()
+    {
+        $id = $this->input->post('e_staffs_projects_id');
+        $employee_id = $this->input->post('employee_id');
+        $project_id = $this->input->post('project_id');
+        if (!empty($id)) {
+            $this->db->where_not_in('id', $id);
+        }
+        $this->db->where('staff_id', $employee_id);
+        $this->db->where('project_id', $project_id);
+        $q = $this->db->get('staffs_projects');
+        if ($q->num_rows() > 0) {
+            $this->form_validation->set_message("unique_employee_id", 'Already taken');
+            return false;
+        } else {
+            return true;
+        }
     }
 
     /* phase form validation rules */

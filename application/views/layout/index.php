@@ -5,11 +5,11 @@
 
 <body class="loading-overlay-showing" data-loading-overlay>
 	<!-- page preloader -->
-	<!-- <div class="loading-overlay dark">
+	<div class="loading-overlay dark">
 		<div class="ring-loader">
 			Loading <span></span>
 		</div>
-	</div> -->
+	</div>
 	<section class="body">
 		<!-- top navbar-->
 		<?php $this->load->view('layout/topbar.php');?>

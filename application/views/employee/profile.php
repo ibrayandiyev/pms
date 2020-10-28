@@ -8,7 +8,7 @@
 				</div>
 			<?php echo form_open_multipart($this->uri->uri_string()); ?>
 				<div class="panel-body">
-					<input type="hidden" name="staff_id" id="staff_id" value="<?php echo $staff['id']; ?>">
+					<input type="hidden" name="staff_id" id="staff_id" value="<?php echo $staff['staff_id']; ?>">
 					<!-- academic details-->
 					<div class="headers-line mt-md">
 					</div>
@@ -17,7 +17,6 @@
 							<div class="form-group">
 								<label class="control-label">Employee ID</label>
 								<input type="text" class="form-control" name="" value="<?=set_value('employee_id', $staff['employee_id'])?>"  disabled="disabled">
-								<input type="hidden" name="employee_id" value="<?=set_value('employee_id', $staff['employee_id'])?>">
 							</div>
 							<span class="error"><?php echo form_error('employee_id'); ?></span>
 						</div>

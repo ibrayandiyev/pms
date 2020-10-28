@@ -47,7 +47,7 @@
                     <?php endif; ?>
                     <?php if (is_superadmin_loggedin() || is_admin_loggedin()): ?>
                     <!-- administrators -->
-                    <li class="nav-parent <?php if ($main_menu == 'admins') echo 'nav-expanded nav-active';?>">
+                    <li class="nav-parent <?php if ($main_menu == 'administrators') echo 'nav-expanded nav-active';?>">
                         <a>
                             <i class="icons icon-user-follow"></i><span>Administrators</span>
                         </a>
